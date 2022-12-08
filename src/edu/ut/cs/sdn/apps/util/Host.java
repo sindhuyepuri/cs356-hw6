@@ -7,10 +7,10 @@ import net.floodlightcontroller.devicemanager.IDevice;
 public class Host
 {
 	/* Meta-data about the host from Floodlight's device manager */
-	private IDevice device;
+	private final IDevice device;
 	
 	/* Floodlight module which is needed to lookup switches by DPID */
-	private IFloodlightProviderService floodlightProv;
+	private final IFloodlightProviderService floodlightProv;
 	
 	/**
 	 * Create a host.

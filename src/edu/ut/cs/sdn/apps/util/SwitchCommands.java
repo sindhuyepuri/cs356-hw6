@@ -24,7 +24,7 @@ public class SwitchCommands
 	public static final short MAX_PRIORITY = Short.MAX_VALUE-1;
 	
 	// Interface to the logging system
-    private static Logger log =
+    private static final Logger log =
             LoggerFactory.getLogger(SwitchCommands.class.getSimpleName());
 
 	/**

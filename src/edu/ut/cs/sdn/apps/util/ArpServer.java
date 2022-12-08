@@ -32,7 +32,7 @@ public class ArpServer implements IFloodlightModule, IOFMessageListener
 	public static final String MODULE_NAME = ArpServer.class.getSimpleName();
 	
 	// Interface to the logging system
-    private static Logger log = LoggerFactory.getLogger(MODULE_NAME);
+    private static final Logger log = LoggerFactory.getLogger(MODULE_NAME);
     
 	// Interface to Floodlight core for interacting with connected switches
     private IFloodlightProviderService floodlightProv;

@@ -9,13 +9,13 @@ import net.floodlightcontroller.util.MACAddress;
 public class LoadBalancerInstance 
 {
 	// Virtual IP for this load balancer instance
-	private int virtualIP;
+	private final int virtualIP;
 	
 	// Virtual MAC address for this load balancer instance
-	private byte[] virtualMAC;
+	private final byte[] virtualMAC;
 	
 	// IPs for the hosts to which a flow could be sent
-	private List<Integer> hostIPs;
+	private final List<Integer> hostIPs;
 	
 	// The index for the last host to which a flow was sent;
 	private int lastHost;
